@@ -1,7 +1,7 @@
 {
   "name": "myro-ai-hotkeys",
   "description": "Use hotkeys to accelerate workflow in ChatGPT, Grok, Gemini.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "permissions": [
     "activeTab",
     "commands"
@@ -9,20 +9,20 @@
   "content_scripts": [
     {
     "matches": ["https://chatgpt.com/*"],
-    "css": [""],
-      "js": [""],
+      "css": ["app/chatgpt/chatgpt-styles.css"],
+      "js": ["app/chatgpt/chatgpt-script.js"],
       "run_at": "document_end"
     },
     {
     "matches": ["https://grok.com/*"],
-      "css": ["grok/grok-styles.css"],
-      "js": ["grok/grok-script.js"],
+      "css": ["app/grok/grok-styles.css"],
+      "js": ["app/grok/grok-script.js"],
       "run_at": "document_end"
     },
     {
     "matches": ["https://gemini.google.com/app*"],
-    "css": [""],
-      "js": [""],
+      "css": ["app/gemini/gemini-styles.css"],
+      "js": ["app/gemini/gemini-script.js"],
       "run_at": "document_end"
     }
   ],
@@ -39,15 +39,13 @@
   "commands": {
     "next-model": {
       "suggested_key": {
-        "default": "Alt+A",
-        "mac": "Command+Option+A"
+        "default": "Alt+A"
       },
       "description": "Next AI model"
     },
     "new-chat": {
       "suggested_key": {
-        "default": "Alt+N",
-        "mac": "Command+Option+N"
+        "default": "Alt+N"
       },
       "description": "New chat"
     }
