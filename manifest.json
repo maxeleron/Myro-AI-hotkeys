@@ -1,0 +1,56 @@
+{
+  "name": "myro-ai-hotkeys",
+  "description": "Use hotkeys to accelerate workflow in ChatGPT, Grok, Gemini.",
+  "version": "0.0.1",
+  "permissions": [
+    "activeTab",
+    "commands"
+  ],
+  "content_scripts": [
+    {
+    "matches": ["https://chatgpt.com/*"],
+    "css": [""],
+      "js": [""],
+      "run_at": "document_end"
+    },
+    {
+    "matches": ["https://grok.com/*"],
+    "css": [""],
+      "js": [""],
+      "run_at": "document_end"
+    },
+    {
+    "matches": ["https://gemini.google.com/app*"],
+    "css": [""],
+      "js": [""],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_title": "Myro: AI Hotkeys",
+    "default_popup": "app/app.html",
+    "default_icon": {
+      "16": "app/icons/16.png",
+      "32": "app/icons/32.png",
+      "48": "app/icons/48.png",
+      "128": "app/icons/128.png"
+    }
+  },
+  "commands": {
+    "next-model": {
+      "suggested_key": {
+        "default": "Alt+A",
+        "mac": "Command+Option+A"
+      },
+      "description": "Next AI model"
+    },
+    "new-chat": {
+      "suggested_key": {
+        "default": "Alt+N",
+        "mac": "Command+Option+N"
+      },
+      "description": "New chat"
+    }
+  },
+  "manifest_version": 3
+}
