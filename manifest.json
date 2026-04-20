@@ -15,8 +15,8 @@
     },
     {
     "matches": ["https://grok.com/*"],
-    "css": [""],
-      "js": [""],
+      "css": ["grok/grok-styles.css"],
+      "js": ["grok/grok-script.js"],
       "run_at": "document_end"
     },
     {
