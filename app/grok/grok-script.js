@@ -25,7 +25,6 @@ function dispatchFullClick(element, actionName = 'element') {
     element.dispatchEvent(event);
   });
 
-  console.log(`🔥 ${actionName} triggered`);
   return true;
 }
 
@@ -75,7 +74,7 @@ function addHotkeys() {
   listenerAdded = true;
 }
 
-// Автозапуск
+// Launch when DOM is ready
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', addHotkeys);
 } else {
