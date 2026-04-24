@@ -10,36 +10,30 @@
     <header>
       <h1>Myro: AI Hotkeys</h1>
     </header>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-platform="chatgpt">ChatGPT</button>
+      <button class="tab-btn" data-platform="gemini">Gemini</button>
+      <button class="tab-btn" data-platform="grok">Grok</button>
+    </div>
+
     <main>
       <p class="description">Keyboard shortcuts to accelerate your AI workflow</p>
-      <table class="shortcuts-table">
+      <table class="shortcuts-table" id="shortcutsTable">
         <thead>
           <tr>
             <th>Shortcut</th>
             <th>Action</th>
-            <th>Platforms</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>
-              <kbd>Alt</kbd> + <kbd>A</kbd><br>
-            </td>
-            <td>Switch to next AI model</td>
-            <td>ChatGPT, Grok, Gemini</td>
-          </tr>
-          <tr>
-            <td>
-              <kbd>Alt</kbd> + <kbd>N</kbd><br>
-            </td>
-            <td>Start new chat</td>
-            <td>ChatGPT, Grok, Gemini</td>
-          </tr>
-        </tbody>
+        <tbody id="tableBody"></tbody>
       </table>
     </main>
+
     <footer>
+      <small>Myro AI Hotkeys • v0.0.3</small>
     </footer>
+
     <script src="app.js" defer></script>
   </body>
 </html>
