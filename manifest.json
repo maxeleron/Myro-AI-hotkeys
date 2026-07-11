@@ -16,13 +16,13 @@
     {
     "matches": ["https://grok.com/*"],
       "css": ["app/grok/grok-styles.css"],
-      "js": ["app/grok/grok-script.js"],
+      "js": ["app/common-agi-script.js", "app/grok/grok-script.js"],
       "run_at": "document_end"
     },
     {
     "matches": ["https://gemini.google.com/app*"],
       "css": ["app/gemini/gemini-styles.css"],
-      "js": ["app/gemini/gemini-script.js"],
+      "js": ["app/common-agi-script.js", "app/gemini/gemini-script.js"],
       "run_at": "document_end"
     }
   ],
