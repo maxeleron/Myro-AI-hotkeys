@@ -10,6 +10,8 @@ Main purpose of hotkeys is the
 [] ChatGPT. HotKeys and features
 [] Gemini. HotKeys and features
 [] Grok. HotKeys and features
+    (✓) Collapse/expand the side panel.
+    ( ) Collapse/expand the project side panel.
 
 
 *Roadmap (future aims)*
@@ -23,4 +25,8 @@ Main purpose of hotkeys is the
 [ ] Feature. Add additional languages for UI
 [ ] Feature. Add Settings page for extension
 
-
+RAW ideas:
+move side panel to right side
+project navigation
+save previous Tab of chosen AI
+Open Myro to the exact model shortcuts, if user is f.e. at grok.com
